@@ -22,13 +22,13 @@ const SuggestedAccounts: NextPage<IProps> = ({ fetchAllUsers, allUsers }) => {
 
   return (
     <div className='pb-4 border-gray-200 xl:border-b-2'>
-      <p className='hidden m-3 mt-4 font-semibold text-gray-500 xl:block'>
+      <p className='hidden m-3 mt-4 font-semibold text-gray-400 xl:block'>
         Suggested accounts
       </p>
       <div>
         {users?.slice(0, 6).map((user: IUser) => (
           <Link href={`/profile/${user._id}`} key={user._id}>
-            <div className='flex gap-3 p-2 font-semibold rounded cursor-pointer dark:text-white dark:bg-slate-50 hover:bg-primary'>
+            <div className='flex gap-3 p-2 font-semibold rounded cursor-pointer dark:text-white dark:bg-amber-400 hover:bg-primary'>
               <div className='w-8 h-8'>
                 <Image
                   width={34}
@@ -45,7 +45,7 @@ const SuggestedAccounts: NextPage<IProps> = ({ fetchAllUsers, allUsers }) => {
                   {user.userName.replace(/\s+/g, '')}{' '}
                   <GoVerified className='text-blue-400' />
                 </p>
-                <p className='text-xs text-gray-400 capitalize'>
+                <p className='text-xs text-gray-100 capitalize'>
                   {user.userName}
                 </p>
               </div>
