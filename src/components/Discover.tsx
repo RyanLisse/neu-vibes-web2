@@ -10,7 +10,7 @@ const Discover: NextPage = () => {
   const { topic } = router.query;
 
   const activeTopicStyle = 'xl:border-2 hover:bg-primary xl:border-[#92FF07] px-3 py-2 rounded xl:rounded-full flex items-center gap-2 justify-center cursor-pointer text-[#92FF07]';
-  const topicStyle = 'xl:border-2 hover:bg-primary xl:border-gray-300 px-3 py-2 rounded xl:rounded-full flex items-center gap-2 justify-center cursor-pointer text-black';
+  const topicStyle = 'xl:border-2 hover:bg-primary xl:border-gray-300 px-3 py-2 rounded xl:rounded-full flex items-center gap-2 justify-center cursor-pointer dark:text-slate-50 text-black';
 
   return (
     <div className='pb-6 xl:border-b-2 xl:border-gray-200'>

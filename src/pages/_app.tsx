@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app';
 import { useEffect, useState } from 'react';
 import { GoogleOAuthProvider } from '@react-oauth/google';
-
+import { ThemeProvider } from 'next-themes';
 import Navbar from '@components/Navbar';
 import Sidebar from '@components/Sidebar';
 import '@styles/globals.css';
@@ -16,6 +16,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   if (isSSR) return null;
 
   return (
+    <ThemeProvider attribute="class">
     <GoogleOAuthProvider clientId={`${process.env.NEXT_PUBLIC_GOOGLE_API_TOKEN}`}>
       <div className='xl:w-[1200px] m-auto dark:bg-nft-dark overflow-hidden h-[100vh]'>
       <Navbar />
@@ -28,7 +29,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         </div>
       </div>
     </div>
-    </GoogleOAuthProvider>
+      </GoogleOAuthProvider>
+    </ThemeProvider>
   );
 };
 

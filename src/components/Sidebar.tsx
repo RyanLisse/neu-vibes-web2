@@ -30,7 +30,7 @@ const Sidebar: NextPage = () => {
                 {showSidebar ? <ImCancelCircle /> : <AiOutlineMenu />}
             </div>
             {showSidebar && (
-                <div className='flex flex-col justify-start w-20 p-3 mb-10 border-r-2 border-gray-100 xl:w-400 xl:border-0 '>
+                <div className='flex flex-col justify-start w-20 p-3 mb-10 text-gray-100 border-r-2 border-gray-100 xl:w-400 xl:border-0 '>
                     <div className='border-gray-200 xl:border-b-2 xl:pb-4'>
                         <Link href='/'>
                             <div className={pathname === '/' ? activeLink : normalLink}>
