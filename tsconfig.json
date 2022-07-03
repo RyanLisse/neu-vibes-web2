@@ -26,6 +26,9 @@
       "@config/*": [
         "src/config/*"
       ],
+      "@store/*": [
+        "src/store/*"
+      ],
       "@utils/*": [
         "src/utils/*"
       ],

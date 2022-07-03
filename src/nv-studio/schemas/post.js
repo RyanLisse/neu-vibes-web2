@@ -44,6 +44,11 @@ export default {
       of: [{ type: 'comment' }],
     },
     {
+      name: 'topics',
+      title: 'Topics',
+      type: 'string',
+    },
+    {
       name: 'genre',
       title: 'Genre',
       type: 'string',
