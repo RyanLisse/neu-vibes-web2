@@ -9,31 +9,31 @@ export const topics = [
   },
   {
     name: 'R&B/Soul',
-    icon: <BsEmojiSunglasses />,
+
   },
   {
     name: 'TRAP',
-    icon: <FaGamepad />,
+
   },
   {
     name: 'EDM',
-    icon: <GiCakeSlice />,
+
   },
   {
     name: 'POP',
-    icon: <GiGalaxy />,
+
   },
   {
     name: 'Chill',
-    icon: <GiLipstick />,
+
   },
   {
     name: 'Hip-Hop',
-    icon: <FaPaw />,
+
   },
   {
     name: 'Rock',
-    icon: <FaMedal />,
+
   },
 ];
 

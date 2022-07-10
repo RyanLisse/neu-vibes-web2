@@ -3,11 +3,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { AiOutlineLogout } from 'react-icons/ai';
-import { GoogleLogin, googleLogout } from '@react-oauth/google'
+import { GoogleLogin, googleLogout } from '@react-oauth/google';
 import { BiSearch } from 'react-icons/bi';
 import { IoMdAdd } from 'react-icons/io';
-
-import Logo from "../utils/logo.png";
+// import { IUser } from '../types';
+import Logo from "public/Logo.png";
 import { createOrGetUser } from '../utils';
 
 import useAuthStore from '../store/authStore';
@@ -17,13 +17,13 @@ const Navbar = () => {
   const [searchValue, setSearchValue] = useState('');
   const router = useRouter();
 
-  const handleSearch = (e: { preventDefault: () => void }) => {
+  const handleSearch = (e) => {
     e.preventDefault();
 
-    if(searchValue) {
-      router.push(`/search/${searchValue}`)
+    if (searchValue) {
+      router.push(`/search/${searchValue}`);
     }
-  }
+  };
 
   return (
     <div className="flex items-center justify-between w-full px-4 py-2 border-b-2 border-gray-200">
@@ -32,7 +32,7 @@ const Navbar = () => {
           <Image
             className="cursor-pointer"
             src={Logo}
-            alt="Neu-Vibez"
+            alt="TikTik"
             layout="responsive"
           />
         </div>
@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="relative hidden md:block">
         <form
           onSubmit={handleSearch}
-          className="absolute md:static top-10 -left-20"
+          className="absolute bg-white md:static top-10 -left-20"
         >
           <input
             type="text"
@@ -79,28 +79,28 @@ const Navbar = () => {
                     alt="profile phoot"
                   />
                 </>
-            </Link>
+              </Link>
             )}
             <button
-            type="button"
-            className="px-2"
-            onClick={() => {
-              googleLogout();
-              removeUser();
-            }}
+              type="button"
+              className="px-2"
+              onClick={() => {
+                googleLogout();
+                removeUser();
+              }}
             >
               <AiOutlineLogout color="red" fontSize={21} />
             </button>
           </div>
         ) : (
-            <GoogleLogin
+          <GoogleLogin
             onSuccess={(response) => createOrGetUser(response, addUser)}
             onError={() => console.log('Error')}
           />
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

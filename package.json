@@ -1,6 +1,6 @@
 {
-  "name": "tiktik_app",
-  "version": "0.1.0",
+  "name": "neu-vibes",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -16,23 +16,22 @@
     "axios": "^0.27.2",
     "jwt-decode": "^3.1.2",
     "lit": "^2.2.7",
-    "next": "12.1.6",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "react-google-login": "^5.2.2",
+    "next": "^12.1.6",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "react-icons": "^4.3.1",
     "uuidv4": "^6.2.13",
     "zustand": "^4.0.0-rc.1"
   },
   "devDependencies": {
-    "@types/node": "18.0.0",
-    "@types/react": "18.0.14",
-    "@types/react-dom": "18.0.5",
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
     "autoprefixer": "^10.4.7",
-    "eslint": "8.18.0",
-    "eslint-config-next": "12.1.6",
+    "eslint": "^8.18.0",
+    "eslint-config-next": "^12.1.6",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.4",
-    "typescript": "4.7.4"
+    "typescript": "^4.7.4"
   }
 }
