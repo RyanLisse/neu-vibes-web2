@@ -1,57 +1,20 @@
 {
-"compilerOptions": {
-  "target": "es5",
-  "lib": [
-    "dom",
-    "dom.iterable",
-    "esnext"
-  ],
-  "allowJs": true,
-  "skipLibCheck": true,
-  "strict": true,
-  "forceConsistentCasingInFileNames": true,
-  "noEmit": true,
-  "esModuleInterop": true,
-  "module": "esnext",
-  "moduleResolution": "node",
-  "resolveJsonModule": true,
-  "isolatedModules": true,
-  "jsx": "preserve",
-  "incremental": true,
-    "baseUrl": ".",
-    "paths": {
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@layouts/*": [
-        "src/layouts/*"
-      ],
-      "@config/*": [
-        "src/config/*"
-      ],
-      "@store/*": [
-        "src/store/*"
-      ],
-      "@utils/*": [
-        "src/utils/*"
-      ],
-      "@nv-studio/*": [
-        "src/nv-studio/*"
-      ],
-      "@styles/*": [
-        "src/styles/*"
-      ],
-      "@server/*": [
-        "src/server/*"
-      ]
-    }
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
   },
-"include": [
-  "next-env.d.ts",
-  "**/*.ts",
-  "**/*.tsx",
-  "pages/profile/[id].js",
-  "pages/search/[searchTerm].js"
-],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
