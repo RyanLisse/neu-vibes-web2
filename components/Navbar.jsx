@@ -32,7 +32,7 @@ const Navbar = () => {
           <Image
             className="cursor-pointer"
             src={Logo}
-            alt="TikTik"
+            alt="logo"
             layout="responsive"
           />
         </div>
@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="relative hidden md:block">
         <form
           onSubmit={handleSearch}
-          className="absolute bg-white md:static top-10 -left-20"
+          className="absolute md:static top-10 -left-20"
         >
           <input
             type="text"
@@ -72,11 +72,11 @@ const Navbar = () => {
               <Link href="/">
                 <>
                   <Image
-                    width={40}
-                    height={40}
+                    width={35}
+                    height={35}
                     className="rounded-full cursor-pointer"
                     src={userProfile.image}
-                    alt="profile phoot"
+                    alt="profile photo"
                   />
                 </>
               </Link>

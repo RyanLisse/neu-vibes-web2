@@ -38,5 +38,5 @@ export const topics = [
 ];
 
 // export const footerList1 = ['About', 'Newsroom', 'Store', 'Contact', 'Carreers', 'ByteDance', 'Creator Directory']
-// export const footerList2 = [ 'TikTik for Good','Advertise','Developers','Transparency','TikTik Rewards' ]
+// export const footerList2 = [ 'Neu-vibez for Good','Advertise','Developers','Transparency','Neu-vibez Rewards' ]
 // export const footerList3 = [ 'Help', 'Safety', 'Terms', 'Privacy', 'Creator Portal', 'Community Guidelines' ]
