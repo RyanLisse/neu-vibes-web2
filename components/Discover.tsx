@@ -14,7 +14,7 @@ const Discover = () => {
 
   return (
     <div className="pb-6 xl:border-b-2 xl:border-gray-200">
-      <p className="hidden m-3 mt-4 font-semibold text-center text-gray-50 xl:block">
+      <p className="hidden m-3 mt-4 font-semibold text-gray-50 xl:block">
         Popular Genres
       </p>
       <div className="flex flex-wrap gap-3">
