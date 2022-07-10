@@ -22,7 +22,6 @@ const Discover = () => {
           <Link href={`/?topic=${item.name}`} key={item.name}>
             <div className={topic === item.name ?activeTopicStyle : topicStyle}>
               <span className="text-2xl font-bold xl:text-md">
-                {item.icon}
               </span>
               <span className="hidden font-medium capitalize text-md xl:block">
                 {item.name}
