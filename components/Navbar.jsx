@@ -72,9 +72,9 @@ const Navbar = () => {
               <Link href="/">
                 <>
                   <Image
-                    width={35}
-                    height={35}
-                    className="rounded-full cursor-pointer"
+                    width={50}
+                    height={50}
+                    className="rounded-full cursor-pointer hover:bg-black hover:text-white"
                     src={userProfile.image}
                     alt="profile photo"
                   />
